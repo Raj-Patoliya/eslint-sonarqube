@@ -1,0 +1,36 @@
+{
+  "issues": [
+    {
+      "engineId": "eslint_repo",
+      "ruleId": "find-hardcoded",
+      "severity": "BLOCKER",
+      "type": "VULNERABILITY",
+      "primaryLocation": {
+        "message": "we found hardcoded Token Value: \"1a2a3a4a5a6a7a8a9a10a\"",
+        "filePath": "/Users/imac/Desktop/raj/sonarqube/Eslint-Practice/JS/demo.ts",
+        "textRange": {
+          "startLine": 2,
+          "endLine": 2,
+          "startColumn": 15,
+          "endColumn": 38
+        }
+      }
+    },
+    {
+      "engineId": "eslint_repo",
+      "ruleId": "find-hardcoded",
+      "severity": "BLOCKER",
+      "type": "VULNERABILITY",
+      "primaryLocation": {
+        "message": "we found hardcoded Token Value: \"1a2a3a4a5a6a7a8a\"",
+        "filePath": "/Users/imac/Desktop/raj/sonarqube/Eslint-Practice/JS/main.js",
+        "textRange": {
+          "startLine": 1,
+          "endLine": 1,
+          "startColumn": 13,
+          "endColumn": 31
+        }
+      }
+    }
+  ]
+}
