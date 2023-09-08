@@ -3,7 +3,7 @@ module.exports = {
     type: 'suggestion',
     docs: {
       description: 'Disallow hardcoded values in code',
-      category: 'Best Practices',
+      category: "Security",
       recommended: true,
     },
   },
