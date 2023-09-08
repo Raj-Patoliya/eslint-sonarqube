@@ -1,7 +1,7 @@
 {
   "issues": [
     {
-      "engineId": "test",
+      "engineId": "eslint_repo",
       "ruleId": "find-hardcoded",
       "severity": "BLOCKER",
       "type": "VULNERABILITY",
@@ -17,7 +17,7 @@
       }
     },
     {
-      "engineId": "test",
+      "engineId": "eslint_repo",
       "ruleId": "find-hardcoded",
       "severity": "BLOCKER",
       "type": "VULNERABILITY",
