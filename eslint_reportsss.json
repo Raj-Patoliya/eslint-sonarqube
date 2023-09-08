@@ -24,6 +24,8 @@
   },
   {
     "filePath": "/Users/imac/Desktop/raj/sonarqube/Eslint-Practice/JS/main.js",
+    "type": "VULNERABILITY",
+    "severity": "CRITICAL",
     "messages": [
       {
         "ruleId": "find-hardcoded",
