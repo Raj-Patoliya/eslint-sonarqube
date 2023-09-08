@@ -4,7 +4,7 @@
     "messages": [
       {
         "ruleId": "find-hardcoded",
-        "severity": "CRITICAL",
+        "severity": 2,
         "type": "VULNERABILITY",
         "message": "we found hardcoded Token Value: \"1a2a3a4a5a6a7a8a9a10a\"",
         "line": 2,
@@ -28,7 +28,7 @@
     "messages": [
       {
         "ruleId": "find-hardcoded",
-        "severity": "CRITICAL",
+        "severity": 2,
         "type": "VULNERABILITY",
         "message": "we found hardcoded Token Value: \"1a2a3a4a5a6a7a8a\"",
         "line": 1,
