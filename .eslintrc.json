@@ -12,6 +12,11 @@
         }
     },
     "rules": {
-        "find-hardcoded": "error"
+        "find-hardcoded": [
+            "error",
+            {
+                "type": "VULNERABILITY"
+            }
+        ]
     }
 }
