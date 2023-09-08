@@ -11,7 +11,7 @@ module.exports = {
   create: function (context) {
     return {
       Literal: function (node) {
-        var valueRegEx = /^([a-zA-Z0-9_-]){10,25}$/
+        let valueRegEx = /^([a-zA-Z0-9_-]){10,25}$/
         if (typeof node.value === 'string' && valueRegEx.test(node.value)) {
           context.report({
             node,
