@@ -63,7 +63,6 @@ pipeline {
                                 fi
                                 sleep 10;
                             done
-                            echo "\$analysisId"
                             analysisId=\$(echo "\$analysisId" | tr -d '"')
                             Status=\$(curl -H "Authorization: Bearer \$SONARQUBE" "http://192.168.40.11:9000/api/qualitygates/project_status?analysisId=\$analysisId" | jq .projectStatus.status)
                         else
