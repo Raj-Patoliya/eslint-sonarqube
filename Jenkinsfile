@@ -61,7 +61,7 @@ pipeline {
                                 if [ "\$analysisId" != "null" ]; then
                                     break
                                 fi
-                                sleep 15;
+                                sleep 10;
                             done
                             echo "\$analysisId"
                             analysisId=\$(echo "\$analysisId" | tr -d '"')
