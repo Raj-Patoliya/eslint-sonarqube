@@ -19,7 +19,7 @@ pipeline {
                                         "type": "VULNERABILITY",
                                         "primaryLocation": {
                                         "message": .message,
-                                        "filePath": $path,
+                                        "filePath": \$path,
                                         "textRange": {
                                             "startLine": .line,
                                             "endLine": .endLine,
