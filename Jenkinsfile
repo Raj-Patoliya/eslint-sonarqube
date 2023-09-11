@@ -12,19 +12,19 @@ pipeline {
                         npm run lint-report || true
                         jq -c '{
                             "issues":[
-                                .[] | {
+                                .[] | .filePath as $path | .messages[] | {
                                         "engineId": "eslint_repo",
-                                        "ruleId": .messages[].ruleId,
+                                        "ruleId": .ruleId,
                                         "severity": "BLOCKER",
                                         "type": "VULNERABILITY",
                                         "primaryLocation": {
-                                        "message": .messages[].message,
-                                        "filePath": .filePath,
+                                        "message": .message,
+                                        "filePath": $path,
                                         "textRange": {
-                                            "startLine": .messages[].line,
-                                            "endLine": .messages[].endLine,
-                                            "startColumn": .messages[].column,
-                                            "endColumn": .messages[].endColumn
+                                            "startLine": .line,
+                                            "endLine": .endLine,
+                                            "startColumn": .column,
+                                            "endColumn": .endColumn
                                         }
                                         }
                                     }
