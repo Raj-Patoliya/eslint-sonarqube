@@ -12,7 +12,7 @@ pipeline {
                         npm run lint-report || true
                         jq -c '{
                             "issues":[
-                                .[] | .filePath as $path | .messages[] | {
+                                .[] | .filePath as \$path | .messages[] | {
                                         "engineId": "eslint_repo",
                                         "ruleId": .ruleId,
                                         "severity": "BLOCKER",
