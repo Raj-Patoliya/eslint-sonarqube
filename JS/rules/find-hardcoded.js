@@ -12,7 +12,7 @@ module.exports = {
     return {
       Literal: function (node) {
         let valueRegEx = /^([a-zA-Z0-9_-]){10,25}$/
-        if (typeof node.value === 'string' && valueRegEx.test(node.value)) {
+        if (typeof node.value === 'string' && (valueRegEx.test(node.value) || /token/i.test(node.value)) ) {
           context.report({
             node,
             message: `we found hardcoded Token Value: "${node.value}"`,
