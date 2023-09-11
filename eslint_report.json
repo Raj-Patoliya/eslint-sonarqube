@@ -1,0 +1,48 @@
+[
+  {
+    "filePath": "/Users/imac/Desktop/raj/sonarqube/Eslint-Practice/JS/demo.ts",
+    "messages": [
+      {
+        "ruleId": "find-hardcoded",
+        "severity": 2,
+        "message": "we found hardcoded Token Value: \"1a2a3a4a5a6a7a8a9a10a\"",
+        "line": 2,
+        "column": 15,
+        "nodeType": "Literal",
+        "endLine": 2,
+        "endColumn": 38
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "let namesss = \"Hello\";\nlet TsToken = \"1a2a3a4a5a6a7a8a9a10a\";\nlet a = \"Token\";\nlet c = \"C\";\n\nlet TsToken2 = \"1a2a3a4a5a6a7a8a9a10aadada\";\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/imac/Desktop/raj/sonarqube/Eslint-Practice/JS/main.js",
+    "messages": [
+      {
+        "ruleId": "find-hardcoded",
+        "severity": 2,
+        "message": "we found hardcoded Token Value: \"1a2a3a4a5a6a7a8a\"",
+        "line": 1,
+        "column": 13,
+        "nodeType": "Literal",
+        "endLine": 1,
+        "endColumn": 31
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "let token = '1a2a3a4a5a6a7a8a';\nlet tokenTs = 'This Is Token';\nlet normal = 'ABC';\n\n",
+    "usedDeprecatedRules": []
+  }
+]
