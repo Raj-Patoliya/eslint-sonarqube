@@ -72,7 +72,7 @@ pipeline {
                             echo "Quality gates fail"
                             exit 1
                         else
-                            echo "Success"
+                            echo "Quality gates Successfully passed"
                             exit 0
                         fi
                     """
